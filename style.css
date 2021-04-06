@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html, body{
+    color: #009297;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.container{
+    padding: 1rem;
+    position: relative;
+}
+.main-title{
+    text-align: center;
+    padding: 2rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem .5rem; 
+    margin-bottom: 3rem;
+}
+.title::after{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 15rem;
+    top: 80px;
+    left: 50%;
+    text-align: center;
+    background: #0171BF;
+    border-radius: 30px;
+    transform:translateX(-50%) rotate(2deg);
+}
+.title::before{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 15rem;
+    top: 80px;
+    left: 50%;
+    text-align: center;
+    background: #0171BF;
+    border-radius: 30px;
+    transform:translateX(-50%) rotate(-2deg);
+}
+.content{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr; 
+    grid-gap: 1rem;
+}
+.content > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.content > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+.content > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+.content > div{
+    margin: 0 auto;
+}
+.topics{
+    text-align: center;
+    padding: 5px 10px;
+    background: #0171BF;
+    color: #fff;
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+ol li{
+    line-height: 1.5;
+    margin: 1rem 3.5rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+a{
+    text-decoration: none;
+}
+ol li a,
+a li{
+    color: #009297;
+    text-decoration: none;
+    cursor: pointer;
+}
+ol li:hover,
+ol li a:hover{
+    color: crimson;
+    font-size: 16.5px;
+    transition: .2s all ease;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    -o-transition: .2s all ease;
+}
+footer h2{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 0;
+}
+.copyright{
+    color: crimson;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 1200px){
+    .content .others{
+        display: none;
+        visibility: hidden;
+        background: crimson;
+    }
+}
+@media only screen and (max-width: 800px){
+    .content .others{
+        display: none;
+        visibility: hidden;
+        background:crimson;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .content{
+        -ms-grid-columns: 1fr 1rem 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px){
+    .content{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    h1.title{
+        text-align: center;
+        padding: 2rem;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .topics{
+        text-align: center;
+        padding: 5px 5px;
+        background: #08ff08;
+        color: #000;
+        margin: 0 50px;
+        width: 250px;
+    }
+    ol li{
+        margin: 1rem 2rem;
+        width: 300px;
+        padding-left: 1rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .topics{
+        margin: 0 81px;
+        width: 360px;
+    }
+    ol li{
+        margin: 1rem 2rem;
+        width: 380px;
+        padding-left: 2rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .topics{
+        width: 308px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .topics{
+        width: 308px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .topics{
+        margin: 0 70px;
+        width: 250px;
+    }
+    ol li {
+        width: 320px;
+        padding-left: 1rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .topics{
+        margin: 0 70px;
+        width: 250px;
+    }
+    ol li {
+        width: 300px;
+        padding-left: 1rem;
+    }
+}
+@media only screen and (max-width: 350px){
+    .topics{
+        margin: 0 auto;
+        width: 250px;
+    }
+    ol li{
+        width: 250px;
+    }
+}
