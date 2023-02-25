@@ -1,7 +1,4 @@
-## To see the output just click the link below -
-___
-<!-- Link with hover effect -->
-[Arduino Resources](https://mdmarufsarker.github.io/Arduino-Resources (creator- Md. Maruf Sarker)) 
+## To see the output just click the link below - [Arduino Resources](https://mdmarufsarker.github.io/Arduino-Resources (creator- Md. Maruf Sarker)) 
 
 * You can bookmark this link on your browser. So that you can easily find it.
 
